@@ -19,8 +19,22 @@ int main(){
     buddy.name = "Tommy Vercetti";
     buddy.level = 999;
     buddy.role = character_role::protagonist;
-
-    std::cout << buddy.name << " is a level " << buddy.level << " at the end of GTA Vice City if it had exp points lol. his role is " <<  (int) buddy.role << std::endl;
+    std::string role;
+    switch(static_cast<int>(buddy.role)){
+        case 0:
+            role = "MC";
+            break;
+        case 1:
+            role = "OPP";
+            break;
+        case 2:
+            role = "buddy";
+            break;
+        case 3: 
+            role = "AN NPC";
+            break;
+    }
+    std::cout << buddy.name << " is a level " << buddy.level << " at the end of GTA Vice City if it had exp points lol. his role is " <<  role << std::endl;
 
 
     std::cout << std::endl << std::endl;
