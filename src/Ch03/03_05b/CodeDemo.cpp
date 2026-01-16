@@ -12,15 +12,19 @@ int main(){
     std::cout << "Initial Zombies Incoming: " << incoming_zombies << std::endl;
 
     // Addition assignment
-
+    std::cout << "Ammo after finding more: " << (ammo += 10) << std::endl;
     // Subtraction assignment
-
+    ammo -= 15;
+    std::cout << "Ammo after firing weapon: " << ammo << std::endl;
     // Multiplication assignment
-
+    incoming_zombies *= 2;
+    std::cout << "Zombies level 2: " << incoming_zombies << std::endl;
     // Division assignment
-
+    ammo /= 2;
+    std::cout << "Ammo after sharing ammo: " << ammo  << std::endl;
     // Remainder assignment
-
+    ammo %= 6;
+    std::cout << "Ammo after losing backpack: " <<  ammo << std::endl;
     std::cout << std::endl << std::endl;
     return 0;
 }
