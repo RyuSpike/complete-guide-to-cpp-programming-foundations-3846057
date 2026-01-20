@@ -7,8 +7,37 @@
 int main(){
     int score = 1023;
     bool gamePaused = false;
-    char action = 'x';
+    char action = '9';
+
+    if(score > 1000) 
+        std::cout << "Your score is over 1000." << std::endl;
+    if(score % 2) 
+        std::cout << "Score is odd" << std::endl;
+    else
+        std::cout << "Score is even" << std::endl;
+
+    std::cout << "The action '"<< action << "' is ";
     
+    switch (static_cast<char>(std::tolower(static_cast<unsigned char>(action)))){
+        case 'a':
+            break;
+        case 'w':
+            break;
+        case 's':
+            break;
+        case 'd':
+            break;
+        default:
+            std::cout << "not";
+        break;
+    }
+    std::cout << " a movement key." << std::endl;
+
+    if(gamePaused)
+        std::cout << "The game is paused!" << std::endl;
+    else
+        std::cout << "The game is running!" << std::endl;
+
     std::cout << std::endl << std::endl;
     return 0;
 }
