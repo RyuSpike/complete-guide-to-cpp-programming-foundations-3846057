@@ -16,7 +16,28 @@ int main(){
     std::cin >> operation;
 
     // switch goes here
+    //result = 0.0f;
+    switch(operation){
+        case '+':
+            result = operand_1 + operand_2;
+            break;
+        case '-': 
+            result = operand_1 - operand_2;
+            break;
+        case '/':
+            if(operand_2 !=0)
+                result = operand_1 / operand_2;
+                break;
+            result = 0;
+            break;
+        case '*':
+            result = operand_1 * operand_2;
+            break;
+        default:
+            result = operand_1 + operand_2;
+            break;
 
+    }
     std::cout << "The result is " << result << std::endl;
     
     std::cout << std::endl << std::endl;
